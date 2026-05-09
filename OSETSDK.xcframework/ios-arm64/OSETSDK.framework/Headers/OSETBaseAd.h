@@ -23,6 +23,7 @@ FOUNDATION_EXPORT NSString * const OSETBiddingInfoLossReasonKey;
 FOUNDATION_EXPORT NSString * const OSETBiddingInfoExtraKey;
 
 @interface OSETBaseAd : NSObject
+@property (nonatomic, copy)   NSString * biddingToken;
 
 -(NSString *)getS2SInfo;
 - (void)loadAdWithToken:(NSString *)token;
