@@ -26,7 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 插屏关闭
 - (void)interstitialLandscapeDidClose:(id)interstitialLandscapeAd;
+/// 插屏关闭落地页
+- (void)interstitialLandscapeCloseTarget:(id)interstitialLandscapeAd;
 
+- (void)interstitialLandscapeExposured:(id)interstitialAd;
 @end
 
 @interface OSETInterstitialLandscapeAd : OSETBaseAd

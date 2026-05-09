@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setTimeout:(NSTimeInterval)timeout;
 
-
+-(NSDictionary *)getBiddingToken;
 #pragma mark - 竞价上报
 /**
  创建竞价成功结果

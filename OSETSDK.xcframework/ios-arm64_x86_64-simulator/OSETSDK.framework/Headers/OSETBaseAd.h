@@ -24,6 +24,8 @@ FOUNDATION_EXPORT NSString * const OSETBiddingInfoExtraKey;
 
 @interface OSETBaseAd : NSObject
 
+-(NSString *)getS2SInfo;
+- (void)loadAdWithToken:(NSString *)token;
 -(void)cacheAd;
 
 /// 手动上报竞价成功。优先使用当前广告对象绑定的 Sort 补全字段；取不到 Sort 时仅上报传入字段。

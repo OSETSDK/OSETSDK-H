@@ -8,7 +8,6 @@
 // OSETAdConfig.h
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
 NS_ASSUME_NONNULL_BEGIN
 
 /// 广告类型
@@ -47,8 +46,7 @@ extern NSString *const OSETMediaAdLoadingExtECPM;
 
 /// 平台标识
 @property (nonatomic, copy) NSString *platform;
-/// 适配器必要时可使用的展示控制器
-@property (nonatomic, weak) UIViewController *rootViewController;
+@property (nonatomic, weak) UIViewController * rootViewController;
 
 /// 广告位ID
 @property (nonatomic, copy) NSString *slotId;
@@ -56,8 +54,9 @@ extern NSString *const OSETMediaAdLoadingExtECPM;
 @property (nonatomic, copy) NSString *userId;
 /// 广告请求ID（必须唯一）
 @property (nonatomic, copy) NSString *requestId;
+@property (nonatomic, copy) NSString *biddingToken;
 
-/// 
+///
 @property (nonatomic, assign) CGSize adSize;
 
 /// 广告类型
